@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+}
+
+h1 {
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 9px;
+    color:rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.58em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.1em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus { 
+    border: 1px solid #00dfc4;
+}
+
+.button {
+    position: relative;
+    font-size: 1.3em;
+    padding: .4em 1.5em;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.25);
+    background-color: #1d2b3a;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:focus {
+    border: 1px solid #00dfc4;
+    color: #00dfc4;
+}
+
+#ketQua {
+    color: #00dfc4;
+    font-size: 30px;
+} 
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tính Điểm Thi Tốt Nghiệp</title>
+</head>
+<body>
+    <h1>Tính điểm thi tốt nghiệp</h1>
+    
+    <!-- Điểm toán -->
+    <div class="inputBox">
+        <input type="number" id="diemToan" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemToan">Điểm môn Toán</span>
+    </div>
+    
+    <!-- Điểm văn -->
+    <div class="inputBox">
+        <input type="number" id="diemVan" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemVan">Điểm môn Văn</span>
+    </div>
+    
+    <!-- Điểm ngoại ngữ -->
+    <div class="inputBox">
+        <input type="number" id="diemAnh" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemAnh">Điểm Ngoại ngữ</span>
+    </div>
+   
+    <!-- Điểm lý / sử -->
+    <div class="inputBox">
+        <input type="number" id="diemLy" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemLy">Điểm môn Lý hoặc Sử </span>
+    </div>
+    
+    <!-- Điểm hóa / địa -->
+    <div class="inputBox">
+        <input type="number" id="diemHoa" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemHoa">Điểm môn Hóa hoặc Địa </span>
+    </div>
+    
+    <!-- Điểm sinh / gd -->
+    <div class="inputBox">
+        <input type="number" id="diemSinh" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemSinh">Điểm môn Sinh hoặc GDCD </span>
+    </div>
+   
+    <!-- Điểm kk -->
+    <div class="inputBox">
+        <input type="number" id="tongDiemKhuyenKhich" min="0" step="0.01" max="4" required="required"><br>
+        <span for="tongDiemKhuyenKhich">Tổng điểm khuyến khích (nếu có)</span>
+    </div>
+
+    <!-- Điểm trung bình lớp cả năm 12 -->
+    <div class="inputBox">
+        <input type="number" id="diemTrungBinh" min="0" step="0.01" max="10" required="required"><br>
+        <span for="diemTrungBinh">Điểm TB cả năm 12</span>
+    </div>
+
+    <!-- Điểm ưu tiên -->
+    <div class="inputBox">
+        <input type="number" id="diemUuTien" min="0" step="0.01" max="2.75" required="required"><br>
+        <span for="diemUuTien">Điểm ưu tiên KV, DT ( Nếu có )</span>
+    </div>
+
+    <button class="button" type="button" onclick="tinhDiem()">Kết quả</button>
+
+    <div id="ketQua"></div>
+
+    <script src="main.js"></script>
+
+    <div id="result"></div>
+</body>
+</html>
